@@ -1,0 +1,23 @@
+body {
+background-color: blue;
+
+
+}
+#container{
+    background-color: burlywood;
+    border-radius: 25px;
+    height: 275px;
+    width: 750px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+#btn{
+    border-radius: 25px;
+    margin: 50px auto;
+    height: 50px;
+    width: 250px;
+    font-size: 22px;
+    background-color: red;
+}
