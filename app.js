@@ -1,19 +1,29 @@
-const btn = document.querySelector("button")
-let quote = document.getElementById("word")
-let author = document.getElementById("name")
+document.addEventListener("DOMContentLoaded", () =>{
 
 
-fetch('http://api.quotable.io/random')
+
+function randomQuotes(){
+    quoteBtn.classList.add("loading");
+    quoteBtn.innerText= "Loading Quote"
+    fetch('http://api.quotable.io/random')
     .then(response => response.json())
-    .then(quote => getQuote(quote))
-
-    btn.innerHTML ="searching quote" 
- function getQuote(data){
-     quote.innerText = data.content
-    author.innerHTML = data.author
-    btn.innerHTML ="new quote"
-   
+    .then(result => {
+    console.log(result);
+        let quoteText = document.querySelector(".quote")
+        let authorName = document.querySelector(".author .name")
+    
+        quoteText.innerText = result.content
+        authorName.innerText = result.author
+        quoteBtn.innerText ="New quote"
+        quoteBtn.classList.remove("loading");
+        
+    }); 
 }
 
+let quoteBtn = document.querySelector("button") 
+quoteBtn.addEventListener("click",randomQuotes())
+}
+)
 
-  btn.addEventListener("click", getQuote);
+let quoteBtn = document.querySelector("button") 
+quoteBtn.addEventListener("click",() => location.reload())
