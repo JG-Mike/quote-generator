@@ -31,12 +31,14 @@ background-color: blue;
     background-color: purple;
 
 }
-.btn button{
-     border-radius: 25px;
-    margin: 50px auto;
-    height: 50px;
-    width: 250px;
-    font-size: 22px;
-    background-color: red;
-    
+
+.features button{
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 13px 22px;
+    border-radius: 30px;
+    background: purple;
 }
