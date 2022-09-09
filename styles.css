@@ -6,18 +6,37 @@ background-color: blue;
 #container{
     background-color: burlywood;
     border-radius: 25px;
-    height: 275px;
+    height: 300px;
     width: 750px;
     margin: 0 auto;
     text-align: center;
 
 }
 
-#btn{
+/* #btn{
     border-radius: 25px;
     margin: 50px auto;
     height: 50px;
     width: 250px;
     font-size: 22px;
     background-color: red;
+} */
+.output{
+    text-align: center;
+     border-radius: 25px;
+    margin: 50px auto;
+    height: 300px;
+    width: 250px;
+    font-size: 22px;
+    background-color: purple;
+
+}
+.btn button{
+     border-radius: 25px;
+    margin: 50px auto;
+    height: 50px;
+    width: 250px;
+    font-size: 22px;
+    background-color: red;
+    
 }
